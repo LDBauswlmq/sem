@@ -27,16 +27,16 @@ int main(int argc, char** argv )
     cout << "Height: " << image.cols << endl;
     
     Scalar intensity;
-    //intensity = image.at<uchar>(100,100);
-    //stringstream ss;
-    //ss << intensity;
-    //string str = ss.str();
-    //cout << str << endl;
+    intensity = image.at<uchar>(100,100);
+    stringstream ss;
+    ss << intensity;
+    string str = ss.str();
+    cout << str << endl;
     cout << "Pixel value is :" << image.at<uchar>(100,100) << endl;
     printf("Pixel value : %c\n", image.at<uchar>(100,100));
     /*
      * This part we get the integral graph.
-     */
+    
     long *IG;
     IG=new long[nRows * nCols];
     for(int IG_i=0; IG_i<nRows; IG_i++){       //IG_i and IG_j shows the elements inside the integral Graph.
@@ -59,7 +59,7 @@ int main(int argc, char** argv )
         }
     }
     delete [] IG;
-     
+    */
     
     if ( !image.data )
     {
