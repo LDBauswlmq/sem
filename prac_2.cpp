@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include </scratch-local/opencv-3.0.0/include/opencv2/opencv.hpp>
+#include </opt/local/include/opencv2/opencv.hpp>
 
 using namespace cv;
 
